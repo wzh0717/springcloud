@@ -1,0 +1,12 @@
+server:
+  port: 8672
+spring:
+  application:
+    name: service-hello
+eureka:
+  client:
+    serviceUrl:
+     # default-zone: http://localhost:8671/eureka/ 报错 Cannot execute request on any known server
+     defaultZone: http://localhost:8671/eureka/
+
+
